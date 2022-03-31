@@ -1,0 +1,226 @@
+header {
+    display:flex;
+    padding-top: 20px;
+    padding-left: 30px;    
+}
+
+.arriba_izq{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.NFim img{
+    display: flex;
+    width: 100px;
+    margin-top: -3px;
+    padding-right: 25px;
+}
+
+.menu{
+    padding-top: 3px;
+    padding-right: 25px;
+    padding-bottom: 65px;
+}
+
+.menu:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    color:rgb(127, 128, 129);
+    -webkit-text-shadow:rgb(127, 128, 129) 0px 1px;
+}
+
+.arriba_der{
+    display: inline-flex;
+    margin-left: auto;
+}
+
+
+i {
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 25px;
+}
+
+.icon img{
+    width: 35px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+body {
+    background-color: black;
+    color:rgb(249, 249, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.centro {
+    padding-top: 30px;
+    height: 100%; 
+    overflow: hidden;    
+}
+
+.centro img {
+    object-fit: cover; 
+    filter: grayscale(50%) contrast(130%);
+    height: 80%;
+    width: 100%;
+}
+
+.GRANDE { 
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.GRANDE:before { 
+    content:"";
+    background: linear-gradient(180deg, rgb(31, 3, 3) 0%, rgb(5, 5, 5, .5) 60%, rgba(0,212,255,0) 100%);
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.GRANDE:after { 
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    height: 400px;
+    width: 100%;
+    left: 0px;
+}
+
+.titulo{
+    padding: 20px 0px 0px 40px;
+}
+
+.titulo img{
+    width: 30%;
+}
+
+.resume {
+    display: box;
+    width: 30%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.botones {
+    display: inline-flex;
+    padding-left: 40px;
+    width: 40%; 
+}
+
+.boton1 {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgb(10, 10, 10);
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 12px;
+}
+
+.boton1:hover {
+    background-color: rgb(233, 232, 232, 0.5);
+}
+
+.boton1 i{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.boton2 {
+    background: #6D6D6EB3;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    margin: 0 9.78 9.78 0;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 12px;
+}
+
+.boton2:hover {
+    background-color: rgba(65, 64, 64, 0.2);
+}
+
+.boton2 i{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.boton3 {
+    background: rgba(12, 12, 12, 0.4);
+    border-color: rgb(5, 5, 5, 0);
+    border-right-color:  rgb(5, 5, 5, 0);
+    border-bottom-color: rgb(5, 5, 5, 0);
+    border-left-color: white;
+    padding: 6px 20px;
+    color: rgb(250, 249, 249);
+    font-size: 14px;
+}
+
+.boton3 {
+    margin-right: -25px;
+    padding-bottom: 40px;
+}
+
+.lista{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 130px 0px 0px 40px;
+}
+
+.wrapper{
+    padding-left: 10px;
+}
+
+.wrapper img{
+    width:242px;
+    padding-left: 4px;
+    display: flex-inline;
+}
+
+.subtituloi {
+    padding: 20px 0px 15px 40px;
+}
+
+div.scrollmenu {
+    overflow: auto; /*aparece porque excede la pag*/
+    overflow-y: hidden; /*esconde vertical*/
+    max-height: 100%;
+    white-space: nowrap; /*mantiene horizontal*/
+}
+
+div.scrollmenu img {
+    display: inline-block;
+    padding: 14px 0px 14px 14px;
+}
+
+div.scrollmenu img:hover {
+    transform:scale(1.25)
+}
+
+::-webkit-scrollbar {
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(126, 119, 119); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c7c5c5; /*color cuando esta sobre*/
+}

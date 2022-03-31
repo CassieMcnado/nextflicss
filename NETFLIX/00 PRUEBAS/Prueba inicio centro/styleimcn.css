@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    color:rgb(249, 249, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.centro { 
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+.centro img {
+    object-fit: cover; 
+    filter: grayscale(100%) contrast(130%);
+    height: 100%;
+    width: 100%;
+}
+
+.GRANDE:before { 
+    content:""; 
+    background: rgb(61,2,2);
+    background: linear-gradient(180deg, rgba(61,2,2,1) 0%, rgba(205,86,86,1) 52%, rgba(0,212,255,0) 100%);
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.GRANDE { 
+    position: relative;
+}
+
+.GRANDE:after { 
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    height: 400px;
+    width: 100%;
+    left: 0px;
+}
